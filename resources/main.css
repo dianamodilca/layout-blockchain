@@ -55,6 +55,7 @@ html, body {
   width: 100px;
   height: 20px;
   text-align: center;
+  /* ai abuzat putin de position absolute si nu ai nevoie de asa ceva, drept urmare layout-ul tau se strica la cea mai mica modificare */
   position: absolute;
   right: 450px;
     
@@ -87,7 +88,9 @@ h1{
   }
 
 .second-title{
+  /* in layout nu avem un monospace */
   font-family:  monospace;
+  /* pozitionarea asta nu inteleg de ce ai avut nevoie de ea, este foarte manuala, pe un ecran diferit de este clar ca nu va merge la fel. Te poti baza pe ordina layoutului: de sus in jos,  stanga dreapta, nu este o tehnica ce recomand cum ai facut tu */
   position: absolute;
   top:150px;
   left: -200px;
@@ -97,6 +100,7 @@ h1{
 }
 
 .under-title-wrapper{
+  /* la fel ca mai sus */
   position: absolute;
   top: 500px;
   width: 500px;
