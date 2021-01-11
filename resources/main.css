@@ -32,12 +32,10 @@ html, body {
   top: 100px;
   right: 100px;
   box-sizing: border-box;
-}
+ }
 
 .buttons-menu div {
   width: 100px;
-  height: 50px;
-  position: relative;
   font-weight: bold;
   font-size: 20px;
   font-family: sans-serif;
@@ -45,41 +43,42 @@ html, body {
 
 .buttons-menu.float-right div {
   float: right;
-}
+ }
 
-.buttons-menu div:nth-child(5){  
-  display: inline-block;
-  padding: 3px;
+.sign-up-wrapper{
   background-color: #fff;
   border-radius: 20px;
-  width: 100px;
-  height: 20px;
+  width: auto;
   text-align: center;
-  /* ai abuzat putin de position absolute si nu ai nevoie de asa ceva, drept urmare layout-ul tau se strica la cea mai mica modificare */
-  position: absolute;
-  right: 450px;
-    
+  color:#00ff;
 }
-a:link {
+
+signUp:link{
+  text-decoration: none;
+  color: #00ff;
+}
+
+signUp:hover{
+  color: #000;
+}
+
+a:link{
   text-decoration: none;
   color: #fff;
 }
-a:hover {
+a:hover{
   color: #acfdfe;
 }
 
-.sign-up:link{
-  color:  #00ff;
+.text-wrapper{
+  text-align:center;
 }
+
 
 .title-wrapper{
   color:#fff;
   font-size: 40px;
   margin: 0;
-  position: absolute;
-  top: 200px;
-  left: 600px;
-  box-sizing: border-box;
 }
 
 h1{
@@ -88,24 +87,14 @@ h1{
   }
 
 .second-title{
-  /* in layout nu avem un monospace */
-  font-family:  monospace;
-  /* pozitionarea asta nu inteleg de ce ai avut nevoie de ea, este foarte manuala, pe un ecran diferit de este clar ca nu va merge la fel. Te poti baza pe ordina layoutului: de sus in jos,  stanga dreapta, nu este o tehnica ce recomand cum ai facut tu */
-  position: absolute;
-  top:150px;
-  left: -200px;
-  letter-spacing: 50px;
-  font-size: 100px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  letter-spacing: 60px;
+  font-size: 50px;
   color: #acfdfe;
 }
 
 .under-title-wrapper{
-  /* la fel ca mai sus */
-  position: absolute;
-  top: 500px;
-  width: 500px;
-  left: 650px;
-  height: 300px;
+  text-align: center;
 }
 
 hr{
@@ -113,8 +102,13 @@ hr{
   border: 1px solid #acfdfe;
 }
 
-.text-wrapper{
-  text-align: center;
+.description-wrapper{
   color: #acfdfe;
   font-family: Verdana, Georgia, Arial, sans-serif;
+}
+
+.description-wrapper div{
+  width: auto;
+  padding-right: 250px;
+  padding-left: 250px;
 }
