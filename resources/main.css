@@ -35,11 +35,14 @@ html, body {
  }
 
 .buttons-menu div {
+  /* acesta este motivul pentru care nu iti mergea stanga, ele au 100px; pe acesta il vezi mai mare din cauza background-ului, dar spatiul este acelasi */
   width: 100px;
+  /* din aceasta cauza trebuie spatiat putin */
+  margin-right: 15px;
   font-weight: bold;
   font-size: 20px;
   font-family: sans-serif;
-  } 
+} 
 
 .buttons-menu.float-right div {
   float: right;
@@ -53,19 +56,29 @@ html, body {
   color:#00ff;
 }
 
-signUp:link{
+/* cred ca acum ai inteles de ce nu functioneaza aici, este un issue de tag mai mult */
+/* signUp:link{
   text-decoration: none;
   color: #00ff;
 }
 
 signUp:hover{
   color: #000;
-}
+} */
 
-a:link{
+a {
   text-decoration: none;
   color: #fff;
 }
+
+.sign-up-wrapper a {
+  color: #00ff;
+}
+/* nu ai nevoie doar de acest state */
+/* a:link{
+  text-decoration: none;
+  color: #fff;
+} */
 a:hover{
   color: #acfdfe;
 }
@@ -108,7 +121,11 @@ hr{
 }
 
 .description-wrapper div{
-  width: auto;
+  /* aceasta este tot manuala, care nu iti asigura centrarea orizontala in pagina */
+  /* width: auto;
   padding-right: 250px;
-  padding-left: 250px;
+  padding-left: 250px; */
+  /* o sugestie de tehnica automata */
+  width: 50%;
+  margin: 0 auto;
 }
